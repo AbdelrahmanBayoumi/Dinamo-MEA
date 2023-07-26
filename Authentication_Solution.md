@@ -1,6 +1,6 @@
-## Authentication Solution
+## Authentication Solution 🔐
 
-### User Sign Up with Email
+### User Sign Up with Email ✉️
 
 1. The user provides their registration details (name, email, password) to the server.
 2. The server checks if the provided email is not already associated with an existing account.
@@ -9,7 +9,7 @@
 5. Upon successful registration, the server generates a JSON Web Token (JWT) containing the user's ID and necessary claims.
 6. The server sends the JWT back to the client for subsequent authenticated requests.
 
-### User Login with Email
+### User Login with Email 🚪
 
 1. The user provides their login credentials (email and password) to the server.
 2. The server validates the credentials and checks if the provided email exists in the database.
@@ -17,7 +17,7 @@
 4. If the passwords match, the server generates a new JWT containing the user's ID and necessary claims.
 5. The server sends the JWT back to the client for use in subsequent authenticated requests.
 
-### User Sign Up and Login with Social Providers
+### User Sign Up and Login with Social Providers 🤝
 
 1. The user selects the desired social provider (Facebook, Google, or Apple) for sign-up or login.
 2. The client initiates the authentication flow with the chosen provider.
@@ -27,7 +27,7 @@
 6. If the user exists in the database (for login) or if the user is new (for sign-up), the server generates a JWT containing the user's ID and necessary claims.
 7. The server sends the JWT back to the client for use in subsequent authenticated requests.
 
-### Authentication for Protected Endpoints
+### Authentication for Protected Endpoints 🔒
 
 1. Client includes the JWT in the `Authorization` header of the request when accessing protected endpoints.
    ```
@@ -38,7 +38,7 @@
 3. If the JWT is valid, the server extracts the user's ID and any other relevant claims from the token.
 4. The server uses the user ID to identify the authenticated user and process the request.
 
-### Password Reset
+### Password Reset 🔑
 
 1. The user requests a password reset by providing their email to the server.
 2. The server verifies the email and generates a password reset token (JWT) with a short expiration time.
@@ -46,13 +46,13 @@
 4. When the user clicks the password reset link, the client sends the password reset token to the server.
 5. The server validates the token, and if it's valid and not expired, allows the user to reset their password.
 
-### Token Expiration and Refresh
+### Token Expiration and Refresh 🔄
 
 1. JWTs should have a short expiration time (e.g., 15 minutes to a few hours) to enhance security.
 2. To allow users to stay logged in without frequent logins, consider using a refresh token mechanism.
 3. When the JWT expires, the client can use a refresh token to request a new JWT without requiring the user to enter credentials again.
 
-### Security Considerations
+### Security Considerations 🔒
 
 1. Always use HTTPS to encrypt data transmitted between the client and server.
 2. Store sensitive data like passwords securely using Bcrypt or a similar strong hashing algorithm.
