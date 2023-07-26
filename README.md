@@ -4,7 +4,7 @@ This repository contains the results of the technical assignment for the NestJS 
 
 ## Authentication Solution
 
-The proposed authentication solution for securing the backend endpoints is documented in [Authentication_Solution.md](./API_Documentation.md). It covers the use of email-based authentication for user sign-up and sign-in, along with options to create an account using Facebook, Google, or Apple.
+The proposed authentication solution for securing the backend endpoints is documented in [Authentication_Solution.md](./Authentication_Solution.md). It covers the use of email-based authentication for user sign-up and sign-in, along with options to create an account using Facebook, Google, or Apple.
 
 ## API Documentation
 
